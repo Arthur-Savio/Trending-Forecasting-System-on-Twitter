@@ -1,0 +1,6 @@
+<img src="assets/img/logo.png" class='logo'>
+<h2>Trend Topics Predictor</h2>
+
+<input type="text" [(ngModel)]="setup.term" placeholder="Search..."><br>
+<input type="number" [(ngModel)]="setup.limit" placeholder="Limit of terms"><br>
+<button (click)="updateSetup()">Search</button>

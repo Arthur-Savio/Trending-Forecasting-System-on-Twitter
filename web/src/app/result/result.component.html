@@ -1,0 +1,47 @@
+
+<div class="row">
+  <div class='column'>
+    <img src="assets/img/sentiment.png" class="sentiments">
+  </div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card border-info mb-3" style="margin-left:80px; margin-top:40px;">
+      <div class="card-body text-info">
+        <h5 class="card-title">Good Sentiments Graphic</h5>
+          <img src="assets/img/good.png" class="img">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card border-danger mb-3" style="margin-left:80px; margin-top:40px;">
+      <div class="card-body text-danger">
+        <h5 class="card-title">Bad Sentiments Graphic</h5>
+           <img src="assets/img/bad.png" class="img">  
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card border-info mb-3" style="max-width: 500px; margin-left:80px; margin-top:40px;">
+      <div class="card-body text-info">
+        <h5 class="card-title">Tweets of Good Sentiments</h5>
+        <p class="card-text" *ngFor="let tweet of selectedTweets | slice:0:5">
+          {{tweet.text}}        
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card border-danger mb-3" style="max-width: 500px; margin-left:110px; margin-top:40px;">
+      <div class="card-body text-danger">
+        <h5 class="card-title">Tweets of Bad Sentiments</h5>
+        <p class="card-text" *ngFor="let tweet of selectedTweets | slice:5:10">
+          {{tweet.text}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

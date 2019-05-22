@@ -1,0 +1,11 @@
+.card {
+    white-space: nowrap;
+    overflow: hidden;
+    border: 2px solid #38B0DE;
+    border-radius: 4px;
+    -webkit-box-shadow: 6px 1px 11px 0px rgba(124, 155, 202, 0.6);
+    -moz-box-shadow: 6px 1px 11px 0px rgba(124, 155, 202, 0.6);
+    box-shadow: 6px 1px 11px 0px rgba(124, 155, 202, 0.6);
+    margin-left: 38%;
+    margin-top: 2%;
+}
